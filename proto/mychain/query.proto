@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package mychain;
+
+service Query {
+    rpc QuerySomething(QueryRequest) returns (QueryResponse);
+}
+
+message QueryRequest {
+    // Define your request fields here
+}
+
+message QueryResponse {
+    // Define your response fields here
+}

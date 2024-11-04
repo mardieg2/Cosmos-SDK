@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package mychain;
+
+service Msg {
+    rpc CreateSomething(MsgCreateSomething) returns (MsgCreateSomethingResponse);
+}
+
+message MsgCreateSomething {
+    // Define your message fields here
+}
+
+message MsgCreateSomethingResponse {
+    // Define your response fields here
+}
